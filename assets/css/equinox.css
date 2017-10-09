@@ -1,0 +1,113 @@
+
+/* Basic Setup */
+html {
+  background-color: #ffffff;
+}
+
+body {
+  background-color: transparent;
+}
+
+
+/*Basic Formatting*/
+
+.center {
+  text-align: center;
+}
+
+.container {
+  margin-bottom: 40px;
+}
+
+
+/* Navbar(s) */
+
+.nav-item {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.navbar {
+  box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+/* Image(s) */
+
+.icon {
+  width: 128px;
+  margin: 16px;
+  box-shadow: 0 5px 13px 0 rgba(31, 31, 31, 0.3);
+}
+
+.rounded {
+  border-radius: 25%;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.banner {
+  border-radius: 15px;
+  box-shadow: 0 5px 13px 0 rgba(31, 31, 31, 0.1);
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+
+/*Text*/
+
+.title {
+  letter-spacing: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  color: #686868;
+  padding: 12px;
+}
+
+
+/*Card(s)*/
+
+.card {
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  border-radius: 15px 15px 0 0;
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #373A3C;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+
+/*Button(s)*/
+
+.btn {
+  background-image: linear-gradient(-225deg, #537895 0%, #09203F 100%);
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, 0.50);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.btn:active {
+  background-image: linear-gradient(-225deg, #537895 0%, #09203F 100%);
+  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, 0.00);
+}
