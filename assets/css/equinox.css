@@ -71,6 +71,9 @@ body {
   padding: 12px;
 }
 
+code {
+  background-color: #0000;
+}
 
 /*Card(s)*/
 
@@ -92,7 +95,12 @@ body {
   font-weight: 600;
 }
 
-
+.jumbotron {
+  border-radius: 15px;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.1);
+}
 /*Button(s)*/
 
 .btn {
