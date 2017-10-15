@@ -240,6 +240,7 @@ body {
 .list-group-item:last-child {
   border-radius: 0 0 15px 15px;
 }
+<<<<<<< HEAD
 
 .page-item {
   box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.1);
@@ -259,3 +260,18 @@ body {
 .progress-bar {
   background-image: linear-gradient(19deg, #21D4FD 0, #B721FF 100%);
 }
+=======
+.alert {
+    border: none;
+}
+
+.alert-primary {
+    background-image: linear-gradient(19deg, #21D4FD 0, #B721FF 100%);
+}
+.alert-secondary {
+    background-image: linear-gradient(62deg, #8EC5FC 0, #E0C3FC 100%);
+} 
+.alert-danger {
+    background-image: linear-gradient(90deg, #FF9A8B 0, #FF6A88 55%, #FF99AC 100%);
+} 
+>>>>>>> e4f3bde848198546d9d24f29f86c1795122f249b
