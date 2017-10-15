@@ -13,8 +13,8 @@ Equinox is an upcoming Bootstrap-based Framework for creating stunning websites.
 * Button group
 * Card - ✓
 * Carousel
-* Collapse
-* Dropdowns
+* Collapse - ✓
+* Dropdowns - ✓
 * Forms
 * Input group
 * Jumbotron - ✓
@@ -23,6 +23,4 @@ Equinox is an upcoming Bootstrap-based Framework for creating stunning websites.
 * Navs
 * Navbar - ✓
 * Pagination
-* Popovers
-* Progress
-* Tooltips
+* Progress - ✓
