@@ -126,11 +126,8 @@ body {
 }
 
 .btn {
-  background-image: linear-gradient(-225deg, #537895 0, #09203F 100%);
   border-radius: 25px;
   border: none;
-  -webkit-box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .5);
-  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .5)
 }
 
 .btn-primary, .btn-success {
@@ -169,7 +166,8 @@ body {
 .btn-warning {
   background-image: linear-gradient(147deg, #FFE53B 0, #FF2525 74%);
   border: none;
-  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .5)
+  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .5);
+  color: #fff;
 }
 
 .btn-secondary {
@@ -179,8 +177,7 @@ body {
 }
 
 .btn-danger {
-  background-image: -webkit-gradient(linear, left top, right top, from(#FF9A8B), color-stop(55%, #FF6A88), to(#FF99AC));
-  background-image: linear-gradient(90deg, #FF9A8B 0, #FF6A88 55%, #FF99AC 100%);
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
   border-radius: 25px;
   border: none;
   -webkit-box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .5);
@@ -192,21 +189,41 @@ body {
   padding-right: 16px
 }
 
-.btn:active {
-  background-image: linear-gradient(-225deg, #537895 0, #09203F 100%);
-  -webkit-box-shadow: 0 5px 9px 0 rgba(83, 120, 149, 0);
-  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, 0)
+.btn-info {
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+  -webkit-box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .5);
+  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .5)
 }
+
+.btn-light {
+  -webkit-box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .5);
+  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .5)
+}
+
+.btn-dark {
+  background-image: linear-gradient(-225deg, #537895 0, #09203F 100%);
+  -webkit-box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .5);
+  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .5)
+}
+
+.btn:active {
+  -webkit-box-shadow: 0 5px 9px 0 rgba(83, 120, 149, 0);
+  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, 0);
+}
+
+.carousel {
+  box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
 .carousel-inner {
   border-radius: 15px;
-  box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* this breaks the overflow:hidden in Chrome/Opera */
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+  /* this fixes the overflow:hidden in Chrome/Opera */
 }
-.d-block .w-100 {
-  border-radius: 15px;
-}
-.carousel-item {
-  border-radius: 15px;
-}
+
 .dropdown-menu {
   box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.1);
   border-radius: 15px;
@@ -240,7 +257,6 @@ body {
 .list-group-item:last-child {
   border-radius: 0 0 15px 15px;
 }
-<<<<<<< HEAD
 
 .page-item {
   box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.1);
@@ -260,18 +276,63 @@ body {
 .progress-bar {
   background-image: linear-gradient(19deg, #21D4FD 0, #B721FF 100%);
 }
-=======
+
 .alert {
-    border: none;
+  border: none;
 }
 
 .alert-primary {
-    background-image: linear-gradient(19deg, #21D4FD 0, #B721FF 100%);
+  background-image: linear-gradient(19deg, #21D4FD 0, #B721FF 100%);
 }
+
 .alert-secondary {
-    background-image: linear-gradient(62deg, #8EC5FC 0, #E0C3FC 100%);
-} 
+  background-image: linear-gradient(62deg, #8EC5FC 0, #E0C3FC 100%);
+}
+
 .alert-danger {
-    background-image: linear-gradient(90deg, #FF9A8B 0, #FF6A88 55%, #FF99AC 100%);
-} 
->>>>>>> e4f3bde848198546d9d24f29f86c1795122f249b
+  background-image: linear-gradient(90deg, #FF9A8B 0, #FF6A88 55%, #FF99AC 100%);
+}
+
+.fade.show {
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  border: none;
+}
+
+.modal-dialog {
+  border-radius: 15px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 -3px 13px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 3px 13px 0 rgba(0, 0, 0, .1)
+}
+
+.modal-header {
+  border: none;
+  box-shadow: 0 -3px 13px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 3px 13px 0 rgba(0, 0, 0, .1)
+}
+
+.modal-footer {
+  border: none;
+  box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 3px 13px 0 rgba(0, 0, 0, .1)
+}
+
+.modal-title {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.breadcrumb {
+  border-radius: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.breadcrumb-item {
+  text-transform: uppercase;
+  font-weight: 600;
+}
