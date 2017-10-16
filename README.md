@@ -6,11 +6,11 @@ Equinox is an upcoming Bootstrap-based Framework for creating stunning websites.
 * ItsNash0 [(@ItsNash0)](https://twitter.com/ItsNash0)
 * Warsame [(@HeyItsWarsame)](https://twitter.com/HeyItsWarsame)
 ### Components
-* Alerts
-* Badge
+* Alerts - ✓
+* Badge - ✓
 * Breadcrumb - ✓
-* Buttons
-* Button group
+* Buttons - ✓
+* Button group - ✓
 * Card - ✓
 * Carousel - ✓
 * Collapse - ✓

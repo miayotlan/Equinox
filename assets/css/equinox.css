@@ -125,27 +125,55 @@ body {
   padding-right: 16px;
 }
 
+.badge-primary {
+  background-image: linear-gradient(19deg, #21D4FD 0, #B721FF 100%);
+}
+
+.badge-secondary {
+  background-image: linear-gradient(62deg, #8EC5FC 0, #E0C3FC 100%);
+}
+.badge-success {
+  background-image: linear-gradient(-90deg, #08AEEA 0, #2AF598 100%);
+}
+.badge-danger {
+  background-image: linear-gradient(147deg, #ff0844 0%, #ffb199 100%);
+}
+.badge-warning {
+  background-image: linear-gradient(147deg, #FFE53B 0, #FF2525 74%);
+  color:#fff;
+}
+.badge-info {
+  background-image: linear-gradient(147deg, #00c6fb 0%, #005bea 100%);
+  color:#fff;
+}
+
+.badge-dark {
+  background-image: linear-gradient(-225deg, #537895 0, #09203F 100%);
+  color: #fff;
+}
+
 .btn {
   border-radius: 25px;
   border: none;
+  margin-bottom: 5px;
 }
 
 .btn-primary, .btn-success {
   border-radius: 25px;
-  -webkit-box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .5)
+  -webkit-box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .2)
 }
 
 .btn-primary {
   background-image: linear-gradient(19deg, #21D4FD 0, #B721FF 100%);
   border: none;
-  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .5)
+  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .2)
 }
 
 .btn-success {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#08AEEA), to(#2AF598));
   background-image: linear-gradient(0deg, #08AEEA 0, #2AF598 100%);
   border: none;
-  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .5);
+  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .2);
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
@@ -155,7 +183,7 @@ body {
 
 .btn-secondary, .btn-warning {
   border-radius: 25px;
-  -webkit-box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .5);
+  -webkit-box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .2);
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
@@ -166,22 +194,22 @@ body {
 .btn-warning {
   background-image: linear-gradient(147deg, #FFE53B 0, #FF2525 74%);
   border: none;
-  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .5);
+  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .2);
   color: #fff;
 }
 
 .btn-secondary {
   background-image: linear-gradient(62deg, #8EC5FC 0, #E0C3FC 100%);
   border: none;
-  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .5)
+  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .2)
 }
 
 .btn-danger {
   background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
   border-radius: 25px;
   border: none;
-  -webkit-box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .5);
-  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .5);
+  -webkit-box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .2);
+  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .2);
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
@@ -191,19 +219,45 @@ body {
 
 .btn-info {
   background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
-  -webkit-box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .5);
-  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .5)
+  -webkit-box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .2);
+  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .2)
 }
 
 .btn-light {
-  -webkit-box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .5);
-  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .5)
+  -webkit-box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .2);
+  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .2)
 }
 
 .btn-dark {
   background-image: linear-gradient(-225deg, #537895 0, #09203F 100%);
-  -webkit-box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .5);
-  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .5)
+  -webkit-box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .2);
+  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, .2)
+}
+
+.btn-secondary:active {
+  background-color: #8EC5FC;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 0 5px 9px 0 rgba(83, 120, 149, 0.3);
+  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, 0.3);
+}
+
+.btn-link {
+  margin-bottom: none;
+}
+
+.btn-light:hover {
+  background-color: #f8f9fa;
+}
+
+.btn-warning:hover {
+  color: #fff;
+}
+
+.btn-link:hover {
+  -webkit-box-shadow: 0 5px 9px 0 rgba(83, 120, 149, 0);
+  box-shadow: 0 5px 9px 0 rgba(83, 120, 149, 0);
 }
 
 .btn:active {
@@ -278,19 +332,33 @@ body {
 }
 
 .alert {
-  border: none;
+  box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 5px 13px 0 rgba(0, 0, 0, .1);
 }
 
 .alert-primary {
   background-image: linear-gradient(19deg, #21D4FD 0, #B721FF 100%);
 }
-
 .alert-secondary {
   background-image: linear-gradient(62deg, #8EC5FC 0, #E0C3FC 100%);
 }
-
+.alert-success {
+  background-image: linear-gradient(-90deg, #08AEEA 0, #2AF598 100%);
+}
 .alert-danger {
-  background-image: linear-gradient(90deg, #FF9A8B 0, #FF6A88 55%, #FF99AC 100%);
+  background-image: linear-gradient(147deg, #ff0844 0%, #ffb199 100%);
+}
+.alert-warning {
+  background-image: linear-gradient(147deg, #FFE53B 0, #FF2525 74%);
+}
+.alert-info {
+  background-image: linear-gradient(147deg, #00c6fb 0%, #005bea 100%);
+  color:#fff;
+}
+
+.alert-dark {
+  background-image: linear-gradient(-225deg, #537895 0, #09203F 100%);
+  color: #fff;
 }
 
 .fade.show {
@@ -335,4 +403,36 @@ body {
 .breadcrumb-item {
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.btn-group .btn {
+  box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0);
+  background-image: linear-gradient(0deg);
+}
+.btn-group .btn-primary {
+  background-image: linear-gradient(0deg, #21D4FD 0, #B721FF 100%);
+}
+
+.btn-group .btn-secondary {
+  background-image: linear-gradient(0deg, #8EC5FC 0, #E0C3FC 100%);
+}
+.btn-group .btn-success {
+  background-image: linear-gradient(0deg, #08AEEA 0, #2AF598 100%);
+}
+.btn-group .btn-danger {
+  background-image: linear-gradient(0deg, #ff0844 0%, #ffb199 100%);
+}
+.btn-group .btn-warning {
+  background-image: linear-gradient(0deg, #FFE53B 0, #FF2525 74%);
+  color:#fff;
+}
+.btn-group .btn-info {
+  background-image: linear-gradient(0deg, #00c6fb 0%, #005bea 100%);
+  color:#fff;
+}
+
+.btn-group .btn-dark {
+  background-image: linear-gradient(0deg, #537895 0, #09203F 100%);
+  color: #fff;
 }
