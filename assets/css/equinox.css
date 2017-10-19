@@ -285,7 +285,6 @@ body {
 
 .input-group {
   box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
 }
 
 .input-group-addon {
@@ -297,8 +296,20 @@ body {
 
 .form-control {
   border-radius: 15px;
+  background-color: #e5e5e5;
+  border: none;
+  box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.1);
+}
+.form-group label {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #333;
+  font-size: 12px
 }
 
+.form-group input {
+  border-radius: 100px;
+}
 .list-group {
   box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.06);
   border-radius: 15px;
@@ -334,10 +345,12 @@ body {
 .alert {
   box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 5px 13px 0 rgba(0, 0, 0, .1);
+  font-weight: 500;
 }
 
 .alert-primary {
   background-image: linear-gradient(19deg, #21D4FD 0, #B721FF 100%);
+  color: #fff;
 }
 .alert-secondary {
   background-image: linear-gradient(62deg, #8EC5FC 0, #E0C3FC 100%);
@@ -347,9 +360,11 @@ body {
 }
 .alert-danger {
   background-image: linear-gradient(147deg, #ff0844 0%, #ffb199 100%);
+  color: #fff;
 }
 .alert-warning {
   background-image: linear-gradient(147deg, #FFE53B 0, #FF2525 74%);
+  color: #fff;
 }
 .alert-info {
   background-image: linear-gradient(147deg, #00c6fb 0%, #005bea 100%);
