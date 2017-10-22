@@ -1,5 +1,5 @@
 # Equinox
-Equinox is an upcoming Bootstrap-based Framework for creating stunning websites.
+Equinox is Bootstrap theme for creating stunning websites.
 
 ### Developers/Designers
 * MΛGNETΛR [(@magnetardev)](https://twitter.com/magnetardev)
